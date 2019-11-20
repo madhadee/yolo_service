@@ -45,10 +45,10 @@ The service provides a user interface via swagger UI at [localhost:8080/ui](http
 
 ### Authors
 Team 01
-Low Qing En (Backend), 1701410 
-Lim Jun Jie (Backend), 1700356 
-Tan Jia Cong Desmond (Backend), 1700623 
-Teng Fu Hong Ryan (React), 1701567
-Muhammad Hadee (Yolo), 1700048
-Nur Iffahizzati Bte Mahmood (React), 1602024
+- Low Qing En (Backend), 1701410 
+- Lim Jun Jie (Backend), 1700356 
+- Tan Jia Cong Desmond (Backend), 1700623 
+- Teng Fu Hong Ryan (React), 1701567
+- Muhammad Hadee (Yolo), 1700048
+- Nur Iffahizzati Bte Mahmood (React), 1602024
 
