@@ -7,7 +7,7 @@ This project is a collaboration between SIT and an industry partner (confidentia
 4. YOLO Service (Current Repository)
 
 ## Demo
-Website: http://35.222.160.149
+Website: www.FourPawsTechnology.club
 
 ## Prerequisites
 
