@@ -1,21 +1,14 @@
 # YOLO Object Detection Service
+This project is a collaboration between SIT and an industry partner (confidential) that aims to provide a Single Page Application with image recognition capabilities. The main feature involves sending an image uploaded by the frontend user interface to the backend services for image recognition processing. Thereafter, the object within the image shall be recognized by an image detection algorithm before having the bounding box coordinates and its corresponding confidence score returned to the frontend for drawing of results. This project consists of the following repositories:
 
-Dockerized object detection service using [YOLO](https://pjreddie.com/darknet/yolo/) based on [AlexeyAB's darknet fork](https://github.com/AlexeyAB/darknet) and
-exposed as a REST API using [connexion](https://github.com/zalando/connexion). 
+1. [Frontend Service](https://github.com/saiwoon/Team1-ICT3102-FrontEnd)
+2. [API Gateway Service](https://github.com/Desmondtjc/3102-BackendGateway)
+3. [Backend Service](https://github.com/Desmondtjc/3102-BackendServices/edit/master/README.md)
+4. YOLO Service (Current Repository)
 
 ## Prerequisites
 
-### Docker on MacOS
-
-You can install docker for MacOS [here](https://docs.docker.com/docker-for-mac/install/)
-
-
-### Docker on Windows
-
-You can install docker for Windows [here](https://docs.docker.com/docker-for-windows/install/)
-
-To Check if your docker is installed run command `docker --version` or `docker info` and check if your version is higher than 18.0.0
-
+<img alt="Docker" src="https://i.imgur.com/yu0yoI7.png" width="50"> Installed [Docker](https://www.docker.com/products/docker-desktop) / [DockerToolbox (Mac)](https://docs.docker.com/toolbox/toolbox_install_mac/) / [DockerToolbox (Windows)](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
 ## Starting the YOLO Service
 
@@ -41,6 +34,7 @@ docker run -d --rm --name yolo_final_service -p 8080:8080 yolo_final
 This will expose a single endpoint `detect` that accepts GET and POST requests where the former takes a URL of an image and the latter lets you upload an image for detection.
 The service provides a user interface via swagger UI at [localhost:8080/ui](http://localhost:8080/ui) where the endpoint can be tested and the details of the input parameters are listed.
 
+<img alt="Kubernetes" src="https://i.imgur.com/3eJILtc.png" width="350"> 
 
 Pulling the image from Google Container Repository
 ---
@@ -55,26 +49,17 @@ Related Docker images within this project hosted on Google Container Repository
 ---
 | Image                    | Pull command                                                                 | Routed to           |
 | ------------------------ | ---------------------------------------------------------------------------- | ------------------- |
-| Frontend Service         | docker pull asia.gcr.io/united-embassy-259407/frontend:update                | Frontend Service    |
-| API Gateway Service      | docker pull asia.gcr.io/united-embassy-259407/gateway:latest                 | API Gateway Service |
-| Backend Service          | docker pull asia.gcr.io/united-embassy-259407/backend:latest                 | Backend Service     |
-| YOLO Service             | docker pull asia.gcr.io/united-embassy-259407/hadee9070/yoloservice:latest   | YOLO Service        |
-
-Related Github repository related to this project
----
-| Image               | Pull command                                        | Routed to           |
-| ------------------- | --------------------------------------------------- | ------------------- |
-| Frontend Service    | https://github.com/saiwoon/Team1-ICT3102-FrontEnd   | Frontend Service    |
-| API Gateway Service | https://github.com/Desmondtjc/3102-BackendGateway   | API Gateway Service |
-| Backend Service     | https://github.com/Desmondtjc/3102-BackendServices  | Backend Service     |
-| YOLO Service        | https://github.com/madhadee/yolo_service            | YOLO Service        |
+| Frontend Service         | docker pull asia.gcr.io/united-embassy-259407/frontend:update                | API Gateway Service |
+| API Gateway Service      | docker pull asia.gcr.io/united-embassy-259407/gateway:latest                 | Backend Service     |
+| Backend Service          | docker pull asia.gcr.io/united-embassy-259407/backend:latest                 | YOLO Service        |
+| YOLO Service             | docker pull asia.gcr.io/united-embassy-259407/hadee9070/yoloservice:latest   | NIL                 |
 
 ### Authors
 Team 01
-- Low Qing En (Backend), 1701410 
-- Lim Jun Jie (Backend), 1700356 
-- Tan Jia Cong Desmond (Backend), 1700623 
-- Teng Fu Hong Ryan (React), 1701567
-- Muhammad Hadee (Yolo), 1700048
-- Nur Iffahizzati Bte Mahmood (React), 1602024
+- Low Qing En (Backend), 1701410, [(LinkedIn)](https://www.linkedin.com/in/qing-en-low-4275a0158/)
+- Lim Jun Jie (Backend), 1700356, [(LinkedIn)](https://www.linkedin.com/in/grisaille/) 
+- Tan Jia Cong Desmond (Backend), 1700623, [(LinkedIn)](https://www.linkedin.com/in/desmond-tjc/) 
+- Teng Fu Hong Ryan (React), 1701567, [(LinkedIn)](https://www.linkedin.com/in/ryan-teng-692b28158/)
+- Muhammad Hadee (Yolo), 1700048, [(LinkedIn)](https://www.linkedin.com/in/hadee-piperdy/)
+- Nur Iffahizzati Bte Mahmood (React), 1602024, [(LinkedIn)](https://www.linkedin.com/in/mnuriffah/)
 
