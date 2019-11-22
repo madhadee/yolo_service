@@ -1,5 +1,5 @@
 # YOLO Object Detection Service
-This project is a collaboration between SIT and an industry partner (confidential) that aims to provide a Single Page Application with image recognition capabilities. The main feature involves sending an image uploaded by the frontend user interface to the backend services for image recognition processing. Thereafter, the object within the image shall be recognized by an image detection algorithm before having the bounding box coordinates and its corresponding confidence score returned to the frontend for drawing of results. This project consists of the following repositories:
+This project is a collaboration between SIT and an industry partner (confidential) that aims to provide a Single Page Application with object detection capabilities. The main feature involves sending an image uploaded by the frontend user interface to the backend services for object detection processing. Thereafter, the objects within the image shall be recognized by an object detection algorithm before having the bounding box coordinates and its corresponding confidence score returned to the frontend for drawing of results. This project consists of the following repositories:
 
 1. [Frontend Service](https://github.com/saiwoon/Team1-ICT3102-FrontEnd)
 2. [API Gateway Service](https://github.com/Desmondtjc/3102-BackendGateway)
@@ -40,7 +40,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 d5508ccf9bc6        yolo_final          "python3 app.py"    xx seconds ago      Up xx seconds       0.0.0.0:8080->8080/tcp   yolo_final_service
 ```
 
-This will expose a single endpoint `detect` that accepts GET and POST requests where the former takes a URL of an image and the latter lets you upload an image for detection.
+This will expose a single endpoint `detect` that accepts GET and POST requests where the former takes a URL of an image and the latter lets you upload an image for object detection.
 The service provides a user interface via swagger UI at [localhost:8080/ui](http://localhost:8080/ui) where the endpoint can be tested and the details of the input parameters are listed.
 
 To test YOLO, select an image or submit an image url through the Swagger UI
