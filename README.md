@@ -3,7 +3,7 @@ This project is a collaboration between SIT and an industry partner (confidentia
 
 1. [Frontend Service](https://github.com/saiwoon/Team1-ICT3102-FrontEnd)
 2. [API Gateway Service](https://github.com/Desmondtjc/3102-BackendGateway)
-3. [Backend Service](https://github.com/Desmondtjc/3102-BackendServices/edit/master/README.md)
+3. [Backend Service](https://github.com/Desmondtjc/3102-BackendServices)
 4. YOLO Service (Current Repository)
 
 ## Demo
