@@ -34,8 +34,45 @@ Congrats, you have completed the docker file build, you are now able to run the 
 docker run -d --rm --name yolo_final_service -p 8080:8080 yolo_final
 ```
 
+Check to see if the service is running by the `docker ps` command. You should see something like this:
+```
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES
+d5508ccf9bc6        yolo_final          "python3 app.py"    xx seconds ago      Up xx seconds       0.0.0.0:8080->8080/tcp   yolo_final_service
+```
+
 This will expose a single endpoint `detect` that accepts GET and POST requests where the former takes a URL of an image and the latter lets you upload an image for detection.
 The service provides a user interface via swagger UI at [localhost:8080/ui](http://localhost:8080/ui) where the endpoint can be tested and the details of the input parameters are listed.
+
+To test YOLO, select an image or submit an image url through the Swagger UI
+
+<img src="https://i.imgur.com/p54HXLs.png"> 
+
+You will be returned results in JSON as shown below.
+
+```
+[
+  [
+    "person",
+    0.9864507913589478,
+    [
+      449.284423828125,
+      615.4758911132812,
+      511.57916259765625,
+      386.283203125
+    ]
+  ],
+  [
+    "aeroplane",
+    0.8858569860458374,
+    [
+      804.9191284179688,
+      277.91021728515625,
+      98.8197021484375,
+      56.653953552246094
+    ]
+  ]
+]
+```
 
 <img alt="Kubernetes" src="https://i.imgur.com/3eJILtc.png" width="350"> 
 
