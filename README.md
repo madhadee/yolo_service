@@ -6,6 +6,9 @@ This project is a collaboration between SIT and an industry partner (confidentia
 3. [Backend Service](https://github.com/Desmondtjc/3102-BackendServices/edit/master/README.md)
 4. YOLO Service (Current Repository)
 
+# Demo
+Website: http://35.222.160.149
+
 ## Prerequisites
 
 <img alt="Docker" src="https://i.imgur.com/yu0yoI7.png" width="50"> Installed [Docker](https://www.docker.com/products/docker-desktop) / [DockerToolbox (Mac)](https://docs.docker.com/toolbox/toolbox_install_mac/) / [DockerToolbox (Windows)](https://docs.docker.com/toolbox/toolbox_install_windows/)
