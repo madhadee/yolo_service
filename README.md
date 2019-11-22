@@ -41,6 +41,16 @@ docker run -d --rm --name yolo_final_service -p 8080:8080 yolo_final
 This will expose a single endpoint `detect` that accepts GET and POST requests where the former takes a URL of an image and the latter lets you upload an image for detection.
 The service provides a user interface via swagger UI at [localhost:8080/ui](http://localhost:8080/ui) where the endpoint can be tested and the details of the input parameters are listed.
 
+
+Pulling the image from Google Container Repository
+---
+We have the completed full system set up on Google container repository running on Google Kubernetes.
+Simply pull the front-end docker image and execute it on your local machine.
+These image will communicate directly with our Kubernetes.
+```
+docker pull asia.gcr.io/united-embassy-259407/frontend:update
+```
+
 Related Docker images within this project hosted on Google Container Repository
 ---
 | Image                    | Pull command                                                                 | Routed to           |
