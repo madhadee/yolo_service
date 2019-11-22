@@ -41,7 +41,23 @@ docker run -d --rm --name yolo_final_service -p 8080:8080 yolo_final
 This will expose a single endpoint `detect` that accepts GET and POST requests where the former takes a URL of an image and the latter lets you upload an image for detection.
 The service provides a user interface via swagger UI at [localhost:8080/ui](http://localhost:8080/ui) where the endpoint can be tested and the details of the input parameters are listed.
 
+Related Docker images within this project hosted on Google Container Repository
+---
+| Image                    | Pull command                                                                 | Routed to           |
+| ------------------------ | ---------------------------------------------------------------------------- | ------------------- |
+| Frontend Service         | docker pull asia.gcr.io/united-embassy-259407/frontend:update                | Frontend Service    |
+| API Gateway Service      | docker pull asia.gcr.io/united-embassy-259407/gateway:latest                 | API Gateway Service |
+| Backend Service          | docker pull asia.gcr.io/united-embassy-259407/backend:latest                 | Backend Service     |
+| YOLO Service             | docker pull asia.gcr.io/united-embassy-259407/hadee9070/yoloservice:latest   | YOLO Service        |
 
+Related Github repository related to this project
+---
+| Image               | Pull command                                        | Routed to           |
+| ------------------- | --------------------------------------------------- | ------------------- |
+| Frontend Service    | https://github.com/saiwoon/Team1-ICT3102-FrontEnd   | Frontend Service    |
+| API Gateway Service | https://github.com/Desmondtjc/3102-BackendGateway   | API Gateway Service |
+| Backend Service     | https://github.com/Desmondtjc/3102-BackendServices  | Backend Service     |
+| YOLO Service        | https://github.com/madhadee/yolo_service            | YOLO Service        |
 
 ### Authors
 Team 01
