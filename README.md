@@ -6,7 +6,7 @@ This project is a collaboration between SIT and an industry partner (confidentia
 3. [Backend Service](https://github.com/Desmondtjc/3102-BackendServices/edit/master/README.md)
 4. YOLO Service (Current Repository)
 
-# Demo
+## Demo
 Website: http://35.222.160.149
 
 ## Prerequisites
